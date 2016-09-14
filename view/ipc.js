@@ -63,6 +63,7 @@ let menudata = {
     toggleshowsiblings: () => setShowSiblings(!getShowSiblings()),
     togglegamegraph: () => setSidebarArrangement(!getShowGraph(), getShowComment()),
     togglecomments: () => setSidebarArrangement(getShowGraph(), !getShowComment()),
+    togglevertical: () => setVerticalMode(!getVerticalMode()),
     togglefullscreen: () => setFullScreen(!getFullScreen()),
 
     checkforupdates: () => ipcRenderer.send('check-for-updates', true),

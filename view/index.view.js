@@ -193,6 +193,14 @@ function getShowComment() {
     return getSidebarArrangement()[1]
 }
 
+function getVerticalMode() {
+  return setting.get('view.vertical_mode')
+}
+
+function setVerticalMode(vertical_mode) {
+  setting.set('view.vertical_mode', vertical_mode)
+}
+
 function getSidebarWidth() {
     return parseFloat($('#sidebar').css('width'))
 }
